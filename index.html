@@ -8,6 +8,8 @@
     <meta name="robots" content="noindex">
     <meta name="googlebot" content="noindex">
     <title>• Feitec 2017</title>
+
+    <!-- VENDOR CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700">
@@ -17,7 +19,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pushy/1.1.0/css/pushy.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+
+    <!-- SITE CSS -->
+    <link rel="stylesheet" href="assets/css/styles.min.css"/>
+    <link rel="stylesheet" href="assets/css/fix.css"/>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/img/favicon.png"/>
 
 </head>
 
@@ -146,7 +154,8 @@
                 </div>
                 <div class="col-md-offset-1 col-md-push-1 col-sm-4">
                     <div class="left-col">
-                        <h3 class="white-text p-t-40 p-t-lg-20 p-t-md-0">O que é? </h3></div>
+                        <img class="img-responsive divino-logo" width="250" height="250" src="assets/img/02_logotipo-divino.png"/>
+                    </div>
                 </div>
                 <div class="col-md-5 col-md-offset-1">
                     <div class="right-col">
@@ -243,33 +252,89 @@
                     <div class="element-title">
                         <h2 class="text-center font-weight-400 white-text">Compartilhe</h2>
                         <p class="text-center white-text font-def">Mostre para seus parentes e amigos a Feira de Tecnologia do Colégio Divino Salvador</p>
-                        <p class="text-center m-t-65 m-b-0">
-                            <a class="btn btn-default btn-box-shadow font-lg m-l-15" role="button" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//pedronifsd.github.io" target="_blank">
-                                <img src="assets/img/social/facebook.svg" width="40px" height="40px" /> Facebook</a>
 
-                            <a class="btn btn-default btn-box-shadow font-lg m-l-15" role="button" href="#">
-                                <img src="assets/img/social/whatsapp.svg" width="40px" height="40px" /> WhatsApp</a>
-
-                            <a class="btn btn-default btn-box-shadow font-lg m-l-15" role="button" href="https://twitter.com/home?status=Conhe%C3%A7a%20a%20FEITEC%202017%3A%20https%3A//feitec.com.br" target="_blank">
-                                <img src="assets/img/social/twitter.svg" width="40px" height="40px" /> Twiiter</a>
-
-                            <a class="btn btn-default btn-box-shadow font-lg m-l-15" role="button" href="#">
-                                <img src="assets/img/social/email.svg" width="40px" height="40px" /> E-mail</a>
-
-                        </p>
                     </div>
                 </div>
                 <div class="clearfix"></div>
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div id="privacidade" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Poítica de Privacidade</h4>
+          </div>
+          <div class="modal-body">
+
+            <h3>SEÇÃO 1 - O QUE FAREMOS COM ESTA INFORMAÇÃO?</h3>
+
+            <p>Quando você realiza alguma transação com nossa loja, como parte do processo de compra e venda, coletamos as informações pessoais que você nos dá tais como: nome, e-mail e endereço.</p>
+
+            <p>Quando você acessa nosso site, também recebemos automaticamente o protocolo de internet do seu computador, endereço de IP, a fim de obter informações que nos ajudam a aprender sobre seu navegador e sistema operacional.</p>
+
+            <p>Email Marketing será realizado apenas caso você permita. Nestes emails você poderá receber notícia sobre nossa loja, novos produtos e outras atualizações.</p>
+
+            <h3>SEÇÃO 2 - CONSENTIMENTO</h3>
+
+            <p>Como vocês obtêm meu consentimento?</p>
+
+            <p>Quando você fornece informações pessoais como nome, telefone e endereço, para completar: uma transação, verificar seu cartão de crédito, fazer um pedido, providenciar uma entrega ou retornar uma compra. Após a realização de ações entendemos que você está de acordo com a coleta de dados para serem utilizados pela nossa empresa.</p>
+
+            <p>Se pedimos por suas informações pessoais por uma razão secundária, como marketing, vamos lhe pedir diretamente por seu consentimento, ou lhe fornecer a oportunidade de dizer não.</p>
+
+            <p>E caso você queira retirar seu consentimento, como proceder?</p>
+
+            <p>Se após você nos fornecer seus dados, você mudar de ideia, você pode retirar o seu consentimento para que possamos entrar em contato, para a coleção de dados contínua, uso ou divulgação de suas informações, a qualquer momento, entrando em contato conosco em pedroni.dev@gmail.com ou nos enviando uma correspondência em: Feitec 2017</p>
+
+            <h3>SEÇÃO 4 - SERVIÇOS DE TERCEIROS</h3>
+
+            <p>No geral, os fornecedores terceirizados usados por nós irão apenas coletar, usar e divulgar suas informações na medida do necessário para permitir que eles realizem os serviços que eles nos fornecem.</p>
+
+            <p>Entretanto, certos fornecedores de serviços terceirizados, tais como gateways de pagamento e outros processadores de transação de pagamento, têm suas próprias políticas de privacidade com respeito à informação que somos obrigados a fornecer para eles de suas transações relacionadas com compras.</p>
+
+            <p>Para esses fornecedores, recomendamos que você leia suas políticas de privacidade para que você possa entender a maneira na qual suas informações pessoais serão usadas por esses fornecedores.</p>
+
+            <p>Em particular, lembre-se que certos fornecedores podem ser localizados em ou possuir instalações que são localizadas em jurisdições diferentes que você ou nós. Assim, se você quer continuar com uma transação que envolve os serviços de um fornecedor de serviço terceirizado, então suas informações podem tornar-se sujeitas às leis da(s) jurisdição(ões) nas quais o fornecedor de serviço ou suas instalações estão localizados.</p>
+
+            <p>Como um exemplo, se você está localizado no Canadá e sua transação é processada por um gateway de pagamento localizado nos Estados Unidos, então suas informações pessoais usadas para completar aquela transação podem estar sujeitas a divulgação sob a legislação dos Estados Unidos, incluindo o Ato Patriota.</p>
+
+            <p>Uma vez que você deixe o site da nossa loja ou seja redirecionado para um aplicativo ou site de terceiros, você não será mais regido por essa Política de Privacidade ou pelos Termos de Serviço do nosso site.</p>
+
+            <p>Quando você clica em links na nossa loja, eles podem lhe direcionar para fora do nosso site. Não somos responsáveis pelas práticas de privacidade de outros sites e lhe incentivamos a ler as declarações de privacidade deles.</p>
+
+            <h3>SEÇÃO 5 - SEGURANÇA</h3>
+
+            <p>Para proteger suas informações pessoais, tomamos precauções razoáveis e seguimos as melhores práticas da indústria para nos certificar que elas não serão perdidas inadequadamente, usurpadas, acessadas, divulgadas, alteradas ou destruídas.</p>
+
+            <p>Se você nos fornecer as suas informações de cartão de crédito, essa informação é criptografada usando tecnologia "secure socket layer" (SSL) e armazenada com uma criptografia AES-256. Embora nenhum método de transmissão pela Internet ou armazenamento eletrônico é 100% seguro, nós seguimos todos os requisitos da PCI-DSS e implementamos padrões adicionais geralmente aceitos pela indústria.</p>
+
+            <h3>SEÇÃO 6 - ALTERAÇÕES PARA ESSA POLÍTICA DE PRIVACIDADE</h3>
+
+            <p>Reservamos o direito de modificar essa política de privacidade a qualquer momento, então por favor, revise-a com frequência. Alterações e esclarecimentos vão surtir efeito imediatamente após sua publicação no site. Se fizermos alterações de materiais para essa política, iremos notificá-lo aqui que eles foram atualizados, para que você tenha ciência sobre quais informações coletamos, como as usamos, e sob que circunstâncias, se alguma, usamos e/ou divulgamos elas.</p>
+
+            <p>Se nossa loja for adquirida ou fundida com outra empresa, suas informações podem ser transferidas para os novos proprietários para que possamos continuar a vender produtos para você.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <footer class="primary-extended-gradient-bg p-b-20">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-push-6 footer-nav">
                     <ul class="list-inline text-right text-md-center m-t-5">
-                        <li class="m-r-15"><a class="text-uppercase white-text font-xs" href="#"> Colégio Divino Salvador</a></li>
-                        <li class="m-r-15"><a class="text-uppercase white-text font-xs" href="#">Termos</a></li>
+                        <li class="m-r-15"><a class="text-uppercase white-text font-xs" target="_blank" href="http://pedronifsd.github.io"> Matheus Pedroni</a></li>
+                        <li class="m-r-15"><a class="text-uppercase white-text font-xs" target="_blank" href="http://divinojundiai.com.br"> Colégio Divino Salvador</a></li>
+                        <li class="m-r-15"><a class="text-uppercase white-text font-xs" data-toggle="modal" data-target="#privacidade" href="#">Política de Privacidade</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 col-md-pull-6 copyright">
@@ -294,7 +359,7 @@
     <script src="assets/js/script.min.js"></script>
 
     <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=598a57c81af05400114696ee&product=sticky-share-buttons"></script>
-	
+
 		<!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105638003-2"></script>
 	<script>
