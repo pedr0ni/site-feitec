@@ -1,3 +1,49 @@
 .divino-logo {
     margin-top: -13%;
 }
+
+body{
+    width: 100% ;
+
+    overflow-x: hidden ;
+}
+
+.spinner{
+    width: 80px ;
+    height: 80px ;
+
+    border: 2px solid #f3f3f3 ;
+    border-top:3px solid #f25a41 ;
+    border-radius: 100% ;
+
+    position: absolute ;
+    top:0 ;
+    bottom:0 ;
+    left:0 ;
+    right: 0 ;
+    margin: auto ;
+
+    animation: spin 1s infinite linear ;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+#overlay{
+    position: fixed ; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+ }

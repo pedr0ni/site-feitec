@@ -30,6 +30,11 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <div id="overlay">
+        <div class="spinner"></div>
+    </div>
+
     <header>
         <nav class="navbar navbar-default navbar-fixed-top navigation-clean" data-auto-hide="1">
             <div class="container">
@@ -336,6 +341,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
@@ -351,9 +357,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.js"></script>
     <script src="assets/js/script.min.js"></script>
 
-    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=598a57c81af05400114696ee&product=sticky-share-buttons"></script>
-
-		<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105638003-2"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -362,6 +366,17 @@
 
 	  gtag('config', 'UA-105638003-2');
 	</script>
+
+
+    <script>
+        $('header').hide();
+
+        $(document).ready(function() {
+            $('header').fadeIn(5000);
+            $('#overlay').fadeOut(5000);
+        });
+
+    </script>
 </body>
 
 </html>
