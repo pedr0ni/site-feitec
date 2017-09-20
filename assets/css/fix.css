@@ -59,3 +59,17 @@ body{
  .texto-azul {
      color: #008fb7 !important;
  }
+
+ .img-logo-full {
+     display: block;
+     margin: 0 auto;
+ }
+
+ .header-nav {
+     display: block;
+     margin: 0 auto;
+ }
+
+ .fix-nav {
+     margin-left: 30%;
+ }

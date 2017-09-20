@@ -39,11 +39,10 @@
         <nav class="navbar navbar-default navbar-fixed-top navigation-clean" data-auto-hide="1">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand text-uppercase navbar-link font-def" href="/"><img class="img-responsive" src="assets/img/logo_header.png" /></a>
                     <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-clean"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                 </div>
                 <div class="collapse navbar-collapse" id="navcol-clean">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav fix-nav">
                         <li role="presentation"><a href="#sobre" class="scroll-to" data-scroll-to="product">Sobre</a></li>
                         <li role="presentation"><a href="#evento" class="scroll-to" data-scroll-to="services">Evento</a></li>
                         <li role="presentation"><a href="#projeto" class="scroll-to" data-scroll-to="features">Projetos</a></li>
@@ -58,12 +57,7 @@
             <div class="row">
                 <div class="col-md-12 p-b-60">
                     <div class="element-title">
-                        <h1 class="text-center font-weight-500">Feitec 2017</h1>
-                        <p class="text-center font-def">A feira de tecnologia do Colégio Divino Salvador</p>
-                        <p class="text-center m-t-30 m-b-0">
-                            <a class="btn btn-default btn-box-shadow font-lg m-l-15" role="button" href="https://goo.gl/1RuFko" target="_blank">
-                               <img src="assets/img/heart.svg" width="48px" height="48px" /> Curtir</a>
-                        </p>
+                        <img class="img-responsive img-logo-full" src="assets/img/logo_full.png"/>
                     </div>
                 </div>
                 <div class="col-md-3 hidden-xs hidden-sm">
@@ -219,7 +213,7 @@
     <section class="element element-info-box p-t-100 p-b-110">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 col-sm-offset-1"><img class="img-responsive center-block m-b-sm-40" src="assets/img/cel_divino.png" alt="image-alternative"></div>
+                <div class="col-sm-4 col-sm-offset-1"><img class="img-responsive center-block m-b-sm-40" src="assets/img/cel_info.png" alt="image-alternative"></div>
                 <div class="col-sm-6 col-sm-offset-1 p-t-150 p-t-lg-100 p-t-md-0">
                     <div class="service-icon azul-gradient-bg center-sm-block text-center"><i class="material-icons white-text">nature_people</i></div>
                     <h2 class="text-left texto-azul text-sm-center m-t-30 m-b-30">Sobre</h2>
@@ -354,12 +348,19 @@
 
 
     <script>
+        window.scrollTo(0, 0);
+        window.onscroll = function () { window.scrollTo(0, 0); }; //Lockar scroll
         $('header').hide();
 
         $(document).ready(function() {
-            $('header').fadeIn(5000);
-            $('#overlay').fadeOut(5000);
+            $('#overlay').fadeOut(3000);
         });
+
+        //Liberar Scroll
+        setTimeout(function() {
+            $('header').fadeIn(1000);
+            window.onscroll = function() {};
+        }, 2000);
 
     </script>
 </body>
