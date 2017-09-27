@@ -73,3 +73,12 @@ body{
  .fix-nav {
      margin-left: 30%;
  }
+
+ #contador {
+     font-size: 22px;
+     border: 2px solid;
+     border-radius: 10px;
+     padding: 4px;
+     color: #42A5F5 !important;
+     border-color: #42A5F5;
+ }
